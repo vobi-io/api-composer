@@ -1,0 +1,22 @@
+{
+  "name": "@giiorg/vobi-api-composer-experimental",
+  "version": "0.0.1-alpha",
+  "description": "API composer to generate GraphQL and REST from single configuration",
+  "main": "./lib/index.js",
+  "license": "MIT",
+  "repository": "giiorg/vobi-api-composer-experimental",
+  "keywords": [
+    "api",
+    "composer",
+    "npm",
+    "package"
+  ],
+  "dependencies": {
+    "express": "^4.16.4",
+    "macroable": "^2.0.0"
+  },
+  "peerDependencies": {
+    "graphql": ">=0.13.0 || >=14.0.0 || >=14.1.0",
+    "graphql-compose": ">= 4.0.0"
+  }
+}

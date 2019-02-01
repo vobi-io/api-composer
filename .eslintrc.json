@@ -1,0 +1,39 @@
+{
+  "extends": "standard",
+  "plugins": [
+    "standard"
+  ],
+  "globals": {
+    "apiComposer": true
+  },
+  "rules": {
+    "no-console": 0,
+    "no-undef": "error",
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 100
+      }
+    ],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "ignore",
+        "named": "always"
+      }
+    ],
+    "semi": [
+      2,
+      "never"
+    ],
+    "no-underscore-dangle": 0,
+    "space-before-function-paren": 0
+  }
+}
