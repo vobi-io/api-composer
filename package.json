@@ -1,10 +1,10 @@
 {
-  "name": "@giiorg/vobi-api-composer-experimental",
+  "name": "@vobi/api-composer",
   "version": "0.0.1-alpha",
   "description": "API composer to generate GraphQL and REST from single configuration",
   "main": "./lib/index.js",
   "license": "MIT",
-  "repository": "giiorg/vobi-api-composer-experimental",
+  "repository": "vobi-io/api-composer",
   "keywords": [
     "api",
     "composer",
