@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "start": "node src/app.js",
+    "postinstall": "node -e \"var s=['../src'],d=['node_modules/app'],fs=require('fs');s.forEach(function(_,i){fs.existsSync(d[i])||fs.symlinkSync(s[i],d[i],'dir')});\""
+  },
+  "name": "advanced",
+  "version": "0.0.1",
+  "main": "src/app.js",
+  "license": "MIT",
+  "dependencies": {
+    "@vobi/api-composer": "github:vobi-io/api-composer",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.1.1",
+    "graphql-compose": "^5.5.0",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.8"
+  }
+}
