@@ -6,7 +6,7 @@ api-composer is a tool to describe node.js APIs with simple and elegant syntax. 
 - [Why?](#why?)
 - [Install](#install)
 - [Quick Demo](#quick-demo)
-- [More complex examples](#complex-examples)
+- [More examples](#more-examples)
 
 ## Why?
 
