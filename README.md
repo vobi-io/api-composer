@@ -129,7 +129,7 @@ mutation simpleMutation {
 
 ## More Examples
 
-You can see more examples in [./examples](https://github.com/giiorg/vobi-api-composer-experimental/tree/master/examples) folder of this repository.
+You can see more examples in [./examples](https://github.com/vobi-io/api-composer/tree/master/examples) folder of this repository.
 
 ### License
 
