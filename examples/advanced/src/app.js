@@ -15,7 +15,18 @@ app.use(authMiddleware)
 
 api.onError(onErrorExpress)
 api.responseDecorator(responseDecorator)
-app.use(api.getExpressRoutes())
+
+const router = api.getExpressRoutes()
+router.get('/', (req, res) => {
+  res.json({
+    'Available routes': {
+      '/me': 'GET request to get user by access_token returned from sign-in or sign-up methods (provided in query string like /me?access_token=...)',
+      '/sign-in': 'POST request to sign in with email and password provided in body json',
+      '/sign-up': 'POST request to register with email, password, firstName and lastName in body json'
+    }
+  })
+})
+app.use(router)
 
 app.use(
   '/graphql',
