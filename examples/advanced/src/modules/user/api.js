@@ -23,6 +23,17 @@ api
   .before('auth.isAuthorized')
 
 api
+  .query('users', 'user.findMany')
+  .args({
+    filter: {
+      email: 'String',
+      firstName: 'String',
+      lastName: 'String',
+    }
+  })
+  .type('[User]')
+
+api
   .mutation('signUp')
   .args({
     record: {
