@@ -9,9 +9,11 @@
   "dependencies": {
     "@vobi/api-composer": "git://github.com/vobi-io/api-composer.git#feat/koa-experiment",
     "graphql": "^14.1.1",
+    "graphql-binding": "^2.5.0",
     "graphql-compose": "^5.5.0",
     "koa": "^2.6.2",
     "koa-body": "^4.0.4",
+    "koa-graphql": "^0.8.0",
     "koa-router": "^7.4.0"
   }
 }
