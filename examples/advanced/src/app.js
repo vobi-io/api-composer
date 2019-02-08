@@ -12,6 +12,10 @@ app.use(bodyParser.json())
 const api = mergeApis([userApi])
 
 app.use(authMiddleware)
+app.use((req, res, next) => {
+  console.log(req.body)
+  next()
+})
 
 api.onError(onErrorExpress)
 api.responseDecorator(responseDecorator)

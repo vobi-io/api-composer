@@ -36,12 +36,10 @@ api
 api
   .mutation('signUp')
   .args({
-    record: {
-      email: 'String!',
-      password: 'String!',
-      firstName: 'String!',
-      lastName: 'String!',
-    }
+    email: 'String!',
+    password: 'String!',
+    firstName: 'String!',
+    lastName: 'String!',
   })
   .resolve('auth.signUp')
   .type('AccessToken')
