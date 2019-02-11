@@ -8,7 +8,7 @@
   "main": "src/app.js",
   "license": "MIT",
   "dependencies": {
-    "@vobi/api-composer": "git://github.com/vobi-io/api-composer.git#feat/koa-experiment",
+    "@vobi/api-composer": "git://github.com/vobi-io/api-composer.git",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
