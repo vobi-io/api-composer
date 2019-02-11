@@ -14,7 +14,7 @@ class Auth {
     }
   }
 
-  async signUp ({ args: { firstName, lastName, email, password } }) {
+  async signUp ({ args: { record: { firstName, lastName, email, password } } }) {
     const emailExists = await UserModel.checkIfEmailExist(email)
     if (emailExists) {
       return apiErrors.conflict('Email already exists')
@@ -36,8 +36,7 @@ class Auth {
     }
   }
 
-  async signIn ({ args: { record: { email, password } }, info }) {
-    console.log('info', info)
+  async signIn ({ args: { record: { email, password } } }) {
     const user = await UserModel.findOneByEmail(email)
 
     if (!user) {

@@ -12,10 +12,6 @@ app.use(bodyParser.json())
 const api = mergeApis([userApi])
 
 app.use(authMiddleware)
-app.use((req, res, next) => {
-  console.log(req.body)
-  next()
-})
 
 api.onError(onErrorExpress)
 api.responseDecorator(responseDecorator)
@@ -34,11 +30,14 @@ app.use(router)
 
 app.use(
   '/graphql',
-  graphqlHTTP({
+  graphqlHTTP(req => ({
     schema: api.getGraphqlSchema(),
     graphiql: true,
+    context: {
+      user: req.user,
+    },
     formatError: onErrorGraphql,
-  })
+  }))
 )
 
 app.listen(8000, function () {
