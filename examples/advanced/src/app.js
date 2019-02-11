@@ -30,11 +30,14 @@ app.use(router)
 
 app.use(
   '/graphql',
-  graphqlHTTP({
+  graphqlHTTP(req => ({
     schema: api.getGraphqlSchema(),
     graphiql: true,
+    context: {
+      user: req.user,
+    },
     formatError: onErrorGraphql,
-  })
+  }))
 )
 
 app.listen(8000, function () {
