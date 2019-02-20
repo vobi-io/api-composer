@@ -103,7 +103,7 @@ const graphqlSchema = api.getGraphqlSchema()
 app.use(
   '/graphql',
   graphqlHTTP({
-    schema: api.getGraphqlSchema(),
+    schema: graphqlSchema,
     graphiql: true
   })
 )
