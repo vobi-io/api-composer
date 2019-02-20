@@ -66,6 +66,7 @@ api.mutation('simpleMutation', () => 'I am a simple mutation')
 ```
 Note: first argument is a name of query/mutation and second - resolve function.
 
+
 Finally, you can generate and pass schema to express' graphqlHTTP middleware, and run express app
 ```js
 app.use(
