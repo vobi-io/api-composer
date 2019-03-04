@@ -1,6 +1,6 @@
 {
   "name": "@vobi/api-composer",
-  "version": "0.0.3-alpha",
+  "version": "0.0.4-alpha",
   "description": "API composer to generate GraphQL and REST from single configuration",
   "main": "./lib/index.js",
   "license": "MIT",
