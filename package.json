@@ -12,12 +12,12 @@
     "package"
   ],
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.1",
     "graphql-binding": "2.5.2",
     "graphql-compose": "5.10.4",
     "graphql-compose-mongoose": "^5.3.1",
     "koa-router": "^7.4.0",
-    "macroable": "^2.0.0"
+    "macroable": "^2.0.2"
   },
   "peerDependencies": {
     "graphql": ">=0.13.0 || >=14.0.0 || >=14.1.0"
