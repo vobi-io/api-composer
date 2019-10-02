@@ -1,6 +1,6 @@
 {
   "name": "@vobi/api-composer",
-  "version": "0.0.12",
+  "version": "0.0.14",
   "description": "API composer to generate GraphQL and REST from single configuration",
   "main": "./lib/index.js",
   "license": "MIT",
@@ -14,12 +14,15 @@
   "dependencies": {
     "express": "^4.17.1",
     "graphql-binding": "2.5.2",
-    "graphql-compose": "5.10.4",
-    "graphql-compose-mongoose": "^5.3.1",
+    "graphql-compose": "^7.3.0",
+    "graphql-compose-mongoose": "^7.1.4",
     "koa-router": "^7.4.0",
     "macroable": "^2.0.2"
   },
   "peerDependencies": {
     "graphql": ">=0.13.0 || >=14.0.0 || >=14.1.0"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^14.1.0"
   }
 }
