@@ -7,7 +7,7 @@ api.setResolversPath(path.resolve(__dirname, 'resolvers'))
 
 api.createType('mutationType', {
   a: 'String',
-  b: 'String',
+  b: 'String'
 })
 
 api.query('me', async () => 'ME!')

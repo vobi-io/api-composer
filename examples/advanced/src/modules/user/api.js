@@ -9,11 +9,11 @@ api.createTypes({
   User: {
     firstName: 'String',
     lastName: 'String',
-    email: 'String',
+    email: 'String'
   },
   AccessToken: {
     accessToken: 'String'
-  },
+  }
 })
 
 api.setDefaultType('User')
@@ -28,7 +28,7 @@ api
     filter: {
       email: 'String',
       firstName: 'String',
-      lastName: 'String',
+      lastName: 'String'
     }
   })
   .type('[User]')
@@ -40,7 +40,7 @@ api
       email: 'String!',
       password: 'String!',
       firstName: 'String!',
-      lastName: 'String!',
+      lastName: 'String!'
     }
   })
   .resolve('auth.signUp')
@@ -51,7 +51,7 @@ api
   .args({
     record: {
       email: 'String!',
-      password: 'String!',
+      password: 'String!'
     }
   })
   .resolve('auth.signIn')
