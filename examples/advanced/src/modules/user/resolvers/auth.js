@@ -12,13 +12,6 @@ class Auth {
   async isAuthorized ({ context }) {
     if (!context.user) {
       const err = createError(401, 'User not authorized', { extensions: { code: 'unauthorized' } })
-      console.log('err', err)
-      // const err = new errs.Unauthorized('User not authorized')
-      // err.status = 401
-      // console.log(err instanceof errs.HttpError)
-      // if (err instanceof errs.HttpError) {
-      //   console.log('err', err)
-      // }
       
       return apiErrors.unauthorized('User not authorized')
     }
