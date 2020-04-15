@@ -106,12 +106,12 @@ class Index extends React.Component {
         {[
           {
             content:
-              'To make your landing page more attractive, use illustrations! Check out ' +
-              '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-              'The illustrations you see on this page are from unDraw.',
+              'Api Composer generates input/output/swagger types automatically from mongodb model. ' +
+              'it is simplier to modify properties since you change it in one place so you don\'t have to care about side effects. ' +
+              'You can also create custom types if you want.',
             image: `${baseUrl}img/undraw_code_review.svg`,
             imageAlign: 'left',
-            title: 'Wonderful SVG Illustrations',
+            title: 'Write only once',
           },
         ]}
       </Block>
@@ -122,10 +122,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              'This is another description of how this project is useful',
+              'Api Composer provides simple interface for creating crud module which works on all of its plugins.',
             image: `${baseUrl}img/undraw_note_list.svg`,
             imageAlign: 'right',
-            title: 'Description',
+            title: 'Built in CRUD.',
           },
         ]}
       </Block>
@@ -140,6 +140,36 @@ class Index extends React.Component {
             image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
             imageAlign: 'right',
             title: 'Built In Filters',
+          },
+        ]}
+      </Block>
+    );
+
+    const Readable = () => (
+      <Block background="light">
+        {[
+          {
+            content:
+              'Api Composer provides easily readable interface exposing methods like before, after, beforeSync ' +
+              'so you can easily see buisness logic behind each route just by looking at api declaration.',
+            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            imageAlign: 'right',
+            title: 'Easily readable',
+          },
+        ]}
+      </Block>
+    );
+
+    const Independence = () => (
+      <Block background="light">
+        {[
+          {
+            content:
+              'Each module in Api composer is independent from other modules by default ' +
+              'this makes it simple to split modules at any point and switch to microservices.',
+            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            imageAlign: 'right',
+            title: 'Independence',
           },
         ]}
       </Block>
@@ -164,6 +194,7 @@ class Index extends React.Component {
         ]}
       </Block>
     );
+
 
     const Showcase = () => {
       if ((siteConfig.users || []).length === 0) {
@@ -203,6 +234,8 @@ class Index extends React.Component {
           <LearnHow />
           <TryOut />
           <Description />
+          <Readable />
+          <Independence />
           <Showcase />
         </div>
       </div>
