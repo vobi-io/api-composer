@@ -11,7 +11,7 @@
     "@vobi/api-composer": "git://github.com/vobi-io/api-composer.git",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-graphql": "^0.7.1",
     "graphql": "^14.1.1",
     "graphql-compose": "^5.5.0",
